@@ -1,0 +1,37 @@
+/* CSS Reset */
+
+/* Удаляем отступы и отступы */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Устанавливаем базовый шрифт на 16 пикселей */
+body {
+  line-height: 1;
+  font-size: 16px;
+}
+
+/* Убираем стандартное выделение для ссылок */
+a {
+  text-decoration: none;
+}
+
+/* Этот стиль рекомендуется для добавления к вашему CSS для начала вашего проекта,
+   чтобы гарантировать единообразие визуального отображения на всех браузерах. */
