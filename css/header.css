@@ -1,0 +1,77 @@
+.header__wrapper {
+  display: flex;
+  margin: 10px 15px;
+  align-items: center;
+}
+
+.header__logo img {
+  display: block;
+  margin-right: 67px;
+  width: 77px;
+}
+.header__nav {
+  display: none;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+}
+
+.header__lang {
+  padding: 6px 21px 6px 6px;
+  box-shadow: 0 0 0 1px black;
+  border-radius: 4px;
+  font-size: 14px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('/assets/icon/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 9px 6px;
+}
+
+.header__theme img {
+  display: block;
+  margin: 0 20px;
+  height: 26px;
+  width: 26px;
+}
+
+.header__burger {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header__burger span,
+.header__burger::before,
+.header__burger::after {
+  content: '';
+  width: 30px;
+  height: 2px;
+  background-color: black;
+}
+
+.header__burger::before,
+.header__burger::after {
+  position: absolute;
+  left: 0;
+}
+
+.header__burger::before {
+  top: 0px;
+}
+
+.header__burger::after {
+  bottom: 0px;
+}
