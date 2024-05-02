@@ -2,6 +2,7 @@
  margin: 0;
  padding: 0;
  border: none;
+ box-sizing: border-box;
 }
 
 h1,
@@ -38,6 +39,7 @@ button {
 select {
   appearance: none;
   border: none;
+  background: none;
 }
 
 input {
