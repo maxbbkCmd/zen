@@ -12,14 +12,11 @@
 .header__logo img {
   height: 100%;
 }
-.header__nav {
-}
 .header__actions {
   margin-left: auto;
   display: flex;
   align-items: center;
   gap: 20px;
-
 }
 .header__lang {
   display: flex;
@@ -49,6 +46,4 @@
 .header__theme {
   height: 26px;
   width: 26px;
-}
-.header__burger {
 }
