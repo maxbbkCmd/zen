@@ -1,0 +1,32 @@
+.footer {
+  padding: 30px 30px 15px;
+  background-color: #484848;
+  color: #fff;
+}
+
+.footer__wrapper {
+  display: grid;
+  gap: 30px;
+}
+
+.footer__columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__logo img {
+  display: block;
+  width: 216px;
+}
+
+.footer__dev img {
+ display: block;
+ height: 46px;
+}
