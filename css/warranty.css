@@ -13,9 +13,12 @@
   font-weight: 700;
 }
 
-.warranty__copy {
+.warranty__copy:first-of-type {
   margin-top: 20px;
-  font-weight: 400;
+}
+
+.warranty__copy {
+  margin-top: 10px;
 }
 
 .warranty__image-block {
@@ -23,10 +26,4 @@
   border: 1px solid #aaa;
   border-radius: 20px;
   overflow: hidden;
-}
-
-.warranty__image-block img{
- display: block;
- height: 100%;
- object-fit: cover;
 }
