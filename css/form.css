@@ -7,7 +7,7 @@
   display: flex;
   position: relative;
   height: 30px;
-  border: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
 }
 
 .form__field input {
@@ -38,8 +38,13 @@
 }
 
 .form__checkbox {
-  display: none;
-  border: 1px dashed aqua;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.form__checkbox a {
+  text-decoration: underline;
 }
 
 .form__submit {
