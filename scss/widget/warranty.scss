@@ -1,32 +1,30 @@
 .warranty {
-  padding: 30px 15px;
+  padding: $section-padding;
 }
 
 .warranty__wrapper {
-display: flex;
-flex-direction: column;
-gap: 30px;
+  @include wrapper($wrapper-default);
 }
 
 .warranty__title {
-font-size: 30px;
-font-weight: 700;
+  font-size: $font-size-h2;
+  font-weight: $font-weight;
 }
 
 .warranty__copy {
-margin-top: 20px;
-font-weight: 400;
+  margin-top: 20px;
+  font-weight: 400;
 }
 
 .warranty__image-block {
-height: 72vw;
-border: 1px solid #aaa;
-border-radius: 20px;
-overflow: hidden;
+  height: $img-height;
+  border: $border-default;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .warranty__image-block img{
-display: block;
-height: 100%;
-object-fit: cover;
+  display: block;
+  height: 100%;
+  object-fit: cover;
 }

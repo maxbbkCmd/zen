@@ -1,16 +1,14 @@
 .care {
-  padding: 30px 15px;
+  padding: $section-padding;
 }
 
 .care__wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  @include wrapper($wrapper-default);
 }
 
 .care__title {
-  font-size: 30px;
-  font-weight: 700;
+  font-size: $font-size-h2;
+  font-weight: $font-weight;
 }
 
 .care__copy {
@@ -19,13 +17,13 @@
 }
 
 .care__image-block {
-  height: 72vw;
-  border: 1px solid #aaa;
+  height: $img-height;
+  border: $border-default;
   border-radius: 20px;
   overflow: hidden;
 }
 
-.care__image-block img{
+.care__image-block img {
  display: block;
  height: 100%;
  object-fit: cover;

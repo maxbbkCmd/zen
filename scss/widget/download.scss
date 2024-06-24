@@ -1,16 +1,14 @@
 .download {
-  padding: 30px 15px;
+  padding: $section-padding;
 }
 
 .download__wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+ @include wrapper($wrapper-default);
 }
 
 .download__title {
   font-size: 30px;
-  font-weight: 700;
+  font-weight: $font-weight;
 }
 
 .download__copy {
@@ -33,8 +31,8 @@
 }
 
 .download__image-block {
-  height: 72vw;
-  border: 1px solid #aaa;
+  height: $img-height;
+  border: $border-default;
   border-radius: 20px;
   overflow: hidden;
 }

@@ -1,0 +1,25 @@
+/* Global vars */
+$section-padding: 30px 15px;
+$font-size-h2: 26px;
+$font-weight: 700;
+$border-default: 1px solid #aaa;
+$img-height: 72vw;
+
+/* Map for wrappers */
+$wrapper-default: (
+  display: flex,
+  flex-direction: column,
+  gap: 30px
+);
+
+$menu-background-color: #fff;
+$burger-background-color: #000;
+$modal-body-background-color: #fff;
+$header-background-color: #fff;
+
+
+
+$footer-background-color: #484848;
+$footer-color: #fff;
+
+$form-color: #aaa;

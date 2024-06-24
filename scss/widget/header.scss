@@ -3,8 +3,8 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: #fff;
-  border-bottom: 1px solid #aaa;
+  background: $header-background-color;
+  border-bottom: $border-default;
 }
 .header__wrapper {
   height: 50px;

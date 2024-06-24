@@ -1,13 +1,10 @@
 .cashback {
-  padding: 30px 15px;
-}
-
-.cashback__wrapper {
+  padding: $section-padding;
 }
 
 .cashback__title {
-  font-size: 26px;
-  font-weight: 700;
+  font-size: $font-size-h2;
+  font-weight: $font-weight;
 }
 
 .cashback__copy:first-of-type {
@@ -26,5 +23,5 @@
   width: 100%;
   height: 50px;
   border-radius: 30px;
-  border: 1px solid #aaaaaa;
+  border: $border-default;
 }

@@ -14,3 +14,9 @@
       font-display: swap;
 }
 }
+
+@mixin wrapper($map) {
+  display: map-get($map, display);
+  flex-direction: map-get($map, flex-direction);
+  gap: map-get($map, gap);
+};
