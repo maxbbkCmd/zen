@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* reset */
 *,
 * ::before,
@@ -51,19 +50,22 @@ select {
   outline: 0;
 }
 
-/* fonts */
 @font-face {
-  font-family: "Nunito"; /* Имя, которое будет использоваться в CSS для этого шрифта */
-  src: url("/assets/fonts/Nunito/Nunito-Regular.woff2") format("woff2"), url("/assets/fonts/Nunito/Nunito-Regular.woff") format("woff"), url("/assets/fonts/Nunito/Nunito-Regular.ttf") format("truetype");
+  font-family: "Nunito";
+  src: url("assets/fonts/Nunito/Nunito-Regular.woff2") format("woff2");
+  src: url("assets/fonts/Nunito/Nunito-Regular.woff") format("woff");
+  src: url("assets/fonts/Nunito/Nunito-Regular.ttf") format("truetype");
   font-weight: 400;
-  font-style: normal;
+  font-style: 400;
   font-display: swap;
 }
 @font-face {
   font-family: "Nunito";
-  src: url("/assets/fonts/Nunito//Nunito-Bold.woff2") format("woff2"), url("/assets/fonts/Nunito/Nunito-Bold.woff") format("woff"), url("/assets/fonts/Nunito/Nunito-Bold.ttf") format("truetype");
+  src: url("assets/fonts/Nunito/Nunito-Bold.woff2") format("woff2");
+  src: url("assets/fonts/Nunito/Nunito-Bold.woff") format("woff");
+  src: url("assets/fonts/Nunito/Nunito-Bold.ttf") format("truetype");
   font-weight: 700;
-  font-style: normal;
+  font-style: 400;
   font-display: swap;
 }
 body {
@@ -79,70 +81,6 @@ input {
 
 img {
   width: 100%;
-}
-
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: #fff;
-  border-bottom: 1px solid #aaa;
-}
-
-.header__wrapper {
-  height: 50px;
-  display: flex;
-  align-items: center;
-  padding: 0 15px;
-}
-
-.header__logo {
-  width: 77px;
-  height: 33px;
-}
-
-.header__logo img {
-  height: 100%;
-}
-
-.header__actions {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.header__lang {
-  display: flex;
-  align-items: center;
-  position: relative;
-  width: 50px;
-  height: 30px;
-  border-radius: 4px;
-  border: 1px solid black;
-  overflow: hidden;
-}
-
-.header__lang img {
-  position: absolute;
-  top: 50%;
-  right: 8px;
-  transform: translateY(-50%);
-  width: 9px;
-  height: 6px;
-  z-index: -1;
-}
-
-.header__lang select {
-  padding-left: 8px;
-  height: 100%;
-  width: 100%;
-}
-
-.header__theme {
-  height: 26px;
-  width: 26px;
 }
 
 .menu {
@@ -213,86 +151,6 @@ img {
   bottom: 0;
 }
 
-.download {
-  padding: 30px 15px;
-}
-
-.download__wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.download__title {
-  font-size: 30px;
-  font-weight: 700;
-}
-
-.download__copy {
-  margin-top: 20px;
-  font-weight: 400;
-}
-
-.download__links {
-  margin-top: 20px;
-  width: fit-content;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.download__link {
-  display: block;
-  height: 44px;
-  width: 150px;
-}
-
-.download__image-block {
-  height: 72vw;
-  border: 1px solid #aaa;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.download__image-block img {
-  display: block;
-  height: 100%;
-  object-fit: cover;
-}
-
-.footer {
-  padding: 30px 15px 30px;
-  background-color: #484848;
-  color: #fff;
-}
-
-.footer__wrapper {
-  display: grid;
-  gap: 30px;
-}
-
-.footer__columns {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
-
-.footer__info {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.footer__logo img {
-  display: block;
-  width: 216px;
-}
-
-.footer__dev img {
-  display: block;
-  height: 46px;
-}
-
 .column {
   display: flex;
   flex-direction: column;
@@ -312,110 +170,6 @@ img {
 
 .column__item {
   display: flex;
-}
-
-.warranty {
-  padding: 30px 15px;
-}
-
-.warranty__wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.warranty__title {
-  font-size: 30px;
-  font-weight: 700;
-}
-
-.warranty__copy {
-  margin-top: 20px;
-  font-weight: 400;
-}
-
-.warranty__image-block {
-  height: 72vw;
-  border: 1px solid #aaa;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.warranty__image-block img {
-  display: block;
-  height: 100%;
-  object-fit: cover;
-}
-
-.care {
-  padding: 30px 15px;
-}
-
-.care__wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.care__title {
-  font-size: 30px;
-  font-weight: 700;
-}
-
-.care__copy {
-  margin-top: 20px;
-  font-weight: 400;
-}
-
-.care__image-block {
-  height: 72vw;
-  border: 1px solid #aaa;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.care__image-block img {
-  display: block;
-  height: 100%;
-  object-fit: cover;
-}
-
-.cashback {
-  padding: 30px 15px;
-}
-
-.cashback__title {
-  font-size: 26px;
-  font-weight: 700;
-}
-
-.cashback__copy:first-of-type {
-  margin-top: 20px;
-}
-
-.cashback__copy {
-  margin-top: 10px;
-}
-
-.cashback__button {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 50px;
-  border-radius: 30px;
-  border: 1px solid #aaaaaa;
-}
-
-.clients {
-  padding: 30px 15px;
-}
-
-.clients__brands {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
 }
 
 .modal {
@@ -521,6 +275,254 @@ img {
   font-size: 16px;
   border: 1px solid #aaa;
   border-radius: 30px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #aaa;
+}
+
+.header__wrapper {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.header__logo {
+  width: 77px;
+  height: 33px;
+}
+
+.header__logo img {
+  height: 100%;
+}
+
+.header__actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__lang {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 50px;
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.header__lang img {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  width: 9px;
+  height: 6px;
+  z-index: -1;
+}
+
+.header__lang select {
+  padding-left: 8px;
+  height: 100%;
+  width: 100%;
+}
+
+.header__theme {
+  height: 26px;
+  width: 26px;
+}
+
+.download {
+  padding: 30px 15px;
+}
+
+.download__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.download__title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.download__copy {
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+.download__links {
+  margin-top: 20px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.download__link {
+  display: block;
+  height: 44px;
+  width: 150px;
+}
+
+.download__image-block {
+  height: 72vw;
+  border: 1px solid #aaa;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.download__image-block img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  padding: 30px 15px 30px;
+  background-color: #484848;
+  color: #fff;
+}
+
+.footer__wrapper {
+  display: grid;
+  gap: 30px;
+}
+
+.footer__columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__logo img {
+  display: block;
+  width: 216px;
+}
+
+.footer__dev img {
+  display: block;
+  height: 46px;
+}
+
+.warranty {
+  padding: 30px 15px;
+}
+
+.warranty__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.warranty__title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.warranty__copy {
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+.warranty__image-block {
+  height: 72vw;
+  border: 1px solid #aaa;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.warranty__image-block img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+
+.care {
+  padding: 30px 15px;
+}
+
+.care__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.care__title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.care__copy {
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+.care__image-block {
+  height: 72vw;
+  border: 1px solid #aaa;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.care__image-block img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cashback {
+  padding: 30px 15px;
+}
+
+.cashback__title {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.cashback__copy:first-of-type {
+  margin-top: 20px;
+}
+
+.cashback__copy {
+  margin-top: 10px;
+}
+
+.cashback__button {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  border: 1px solid #aaaaaa;
+}
+
+.clients {
+  padding: 30px 15px;
+}
+
+.clients__brands {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
