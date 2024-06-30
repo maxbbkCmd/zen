@@ -1,21 +1,16 @@
-/* Global vars */
+// Border-radius:
+$border-radius-primary: 20px;
+$border-radius-secondary: 5px;
+
+// Section padding:
 $section-padding: 30px 15px;
-$font-size-h2: 26px;
-$font-weight: 700;
-$border-default: 1px solid #aaa;
-$img-height: 72vw;
+$padding-section-sm: 30px 15px;
 
-/* Map for wrappers */
-$wrapper-default: (
-  display: flex,
-  flex-direction: column,
-  gap: 30px
-);
+// Column color:
+$column-color: #fff;
 
-$form-color: #aaa;
-$menu-background-color: #fff;
-$burger-background-color: #000;
-$modal-body-background-color: #fff;
-$header-background-color: #fff;
-$footer-background-color: #484848;
+// Footer color:
 $footer-color: #fff;
+
+// Modal color:
+$modal-color: #aaa;
